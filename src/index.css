@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montseratt", sans-serif;
+}
+
+.app {
+  background-image: url("./img/warm.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease;
+}
+
+.cold {
+  background-image: url("./img/cold2.jpg");
+}
+
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.75)
+  );
+  padding: 25px;
+}
+
+.search-box {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.title{
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.75);
+}
+
+.search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 16px;
+  margin-top: 33vh;
+  border-bottom: 3px solid rgb(201, 201, 3);
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  transition: 0.5s ease;
+}
+
+.search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 16px 0;
+}
+
+.location {
+  margin-top: 10vh;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.75);
+}
+
+.info{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 500; 
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.75);
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 30vh;
+}
+
+.date {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  color: #fff;
+  padding: 15px 5px;
+  font-size: 100px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50,50,70,0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.75);
+}
